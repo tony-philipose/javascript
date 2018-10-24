@@ -1,0 +1,188 @@
+ // if(regname.test(ln)){
+    //     return true;  
+    // }else{
+    //     alert("Enter a valid lastname..!!!");
+        
+    // }
+    // if(regname.test(name)){
+    //     return true;  
+    // }else{
+    //     alert("Enter a valid firstname..!!!");
+        
+    // }
+
+    // if(regemail.test(email)){
+    //     return true;  
+    // }else{
+    //     alert("Enter a valid email..!!!");
+        
+    // } 
+
+    // if( con.test(cn)){
+    //    return true; 
+    // }
+    // else{
+    //     alert("Enter a valid mobile no..!!!");
+    // }
+
+    // if( p.test(pin)){
+    //     return true; 
+    //  }
+    //  else{
+    //      alert("Enter a valid pincode..!!!");
+    //  }
+    //  //
+    //  if( document.getElementById("m").checked || document.getElementById("f").checked){
+    //     return true; 
+    //  }
+    //  else{
+    //      alert("Gender is mandatory..!!!");
+    //  }
+    //  if(s1 !=='Select State'){
+    //     return true; 
+    //  }
+    //  else{
+    //      alert("Enter a state..!!!");
+    //  }
+    //  if(s2 !=='Select District'){
+    //     return true; 
+    //  }
+    //  else{
+    //      alert("Enter a District..!!!");
+    //  }
+    //  if( document.getElementById("a").checked || document.getElementById("s").checked){
+    //     return true; 
+    //  }
+    //  else{
+    //      alert("Hobby is mandatory..!!!");
+    //  }
+           
+            // if (!name.match(/^[a-zA-Z ]{2,30}$/) || name == ""){
+            //         alert('Name contain atleast 2 letters')
+            //         return false;
+            // }
+            // else if(!ln.match(/^[a-zA-Z ]{2,30}$/) || ln == ""){
+            //     alert('Last name contain atleast 2 letters')
+            //     return false;
+            // }
+            // else if(!fn.match(/^[a-zA-Z ]{2,30}$/) || fn == ""){
+            //     alert('Father name contain atleast 2 letters')
+            //     return false;
+            // }
+            // else if(!mn.match(/^[a-zA-Z ]{2,30}$/) || mn == ""){
+            //     alert('Mother name contain atleast 2 letters')
+            //     return false;
+            // }
+            
+            // else if(document.getElementById("dob").value == "" || document.getElementById("dob").value == null){  
+            //     alert('Enter a valid date')
+            //     return false;
+            // }
+            // else if(document.getElementById("m").checked === false && document.getElementById("f").checked === false){  
+            //     alert(' Choose a valid gen')
+            //     return false;
+            // }
+
+//alert(s1);
+
+    // nullcheck();
+    // function nullcheck(){
+    //     if (name.value == "" || name.value == null )
+    //      {
+    //         alert("First name must be required..!!!");
+    //         name.focus();
+    //         return false; 
+    //      }
+    //      else if (lname.value == "" || lname.value == null)
+    //      {
+    //         alert("Last name must be required..!!!");
+    //         lname.focus(); 
+    //         return false
+    //      }
+    //       else if (dob.value == "" || dob.value == null)
+    //       {
+    //         alert("Dob must be required..!!!");
+    //         dob.focus();
+    //         return false
+    //       } 
+    //       else if (fn.value == "" || fn.value == null)
+    //       {
+    //         alert("Fname must be required..!!!");
+    //         fn.focus();
+    //         return false
+    //       } 
+    //       else if( mn.value == "" || mn.value == null) 
+    //       {
+    //         alert("Mname must be required..!!!");
+    //         mn.focus();
+    //         return false
+    //       } 
+    //      else if (cn.value == "" || cn.value == null )
+    //      {
+    //         alert("Contact must be required..!!!");
+    //         cn.focus();
+    //         return false
+    //      }
+    //      else if( email.value == ""|| email.value == null)
+    //      {
+    //         alert("email must be required..!!!");
+    //         email.focus();
+    //         return false
+    //      } 
+    //      else if( address.value == "" || address.value == null)
+    //      {
+    //         alert("Address must be required..!!!");
+    //         address.focus();
+    //         return false
+    //      }
+    //     else if( pin.value == "" || pin.value == null ) 
+    //     {           
+    //         alert("Pincode must be required..!!!");
+    //         pin.focus();
+    //         return false
+    //     }
+    //     else if(s1.value == 'Select State'){
+    //         alert("Select state");
+    //         s1.focus();
+    //     }
+    //     else if(s2.value == 'Select District'){
+    //         alert("Select District");
+    //         s2.focus();
+    //         return false; 
+    //     }
+    //     else if( f.checked == false && m.checked == false ) 
+    //     {           
+    //         alert("Gender must be required..!!!");
+    //         return false
+    //     }
+    //     else if( a.checked == false && s.checked == false ) 
+    //     {           
+    //         alert("Hobby must be choosen..!!!");
+    //         return false
+    //     }
+    //     else{
+    //         validate();
+    //        // return true
+    //         console.log("null else");
+    //     }  
+    // }
+
+     var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+        today.setYear(date.getFullYear() - 12);
+        
+        alert(today);
+           today.setYear(date.getFullYear() - 12);
+        if(dd<10) {
+            dd = '0'+dd
+        } 
+
+        if(mm<10) {
+            mm = '0'+mm
+        } 
+
+        today = mm + '/' + dd + '/' + yyyy;
+        alert(today);
+undefined

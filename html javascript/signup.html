@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SJ School</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.js"></script> 
+    </head>
+    <body>
+        <div  class="head">
+            <ul>
+                <li class="caption">SJ School</li>
+                <li><a href="about.html">About us</a></li>
+                <li ><a href="signup.html">Signup</a></li>
+                <li ><a href="index.html" class="lout">Login</a></li>
+              </ul>
+        </div>
+        <div class="loginbox">
+                <div>
+                    <div>
+                        <span class="login_cap"><center>Signup here</center></span>
+                    </div>
+                    <div>
+                        <form>
+                                <div class="block2">
+                                    <div>
+                                        <label class="login_label">Name</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="Name" placeholder="Enter name" class="login_txt" onchange="validateName()">
+                                    </div>
+                                </div>
+                            <div class="block2">
+                                <div>
+                                    <label class="login_label">Email</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="email" placeholder="Enter email" class="login_txt" onchange="validateEmail()">
+                                </div>
+                            </div>
+                            <div class="block2">
+                                <div>
+                                    <label class="login_label">Password</label>
+                                </div>
+                                <div>
+                                    <input type="password" id="password" placeholder="Enter password" class="login_txt" onchange="validatePassword()">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="button" id="signup" class="signupnbtn" value="Signup" onclick="signUp()" >
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        <div class="footer">
+             <p>copyright@SJ School.</p>
+        </div>
+    </body>
+</html>        
