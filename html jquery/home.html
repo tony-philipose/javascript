@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SJ School</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <ul>
+                <li class="caption">SJ School</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li ><a href="about.html" >About</a></li>
+              </ul>
+        </div>
+        <form name="myForm" id="myForm" action="#" onsubmit="" method="post">  
+                <div class="box">
+                    <div class="homecap"><span>Student Registeration</span></div>
+                    <div><br>
+                        <label>First Name:</label>
+                        <input type="text" name="First_name" id="First_name" placeholder="First Name" class="text firstname"><span class="error" id="name">Name must be required.</span><span class="error" id="rname">Name must contain atleast 2 letters.</span>
+                    </div>
+                    <div>
+                        <label>Last Name: </label>
+                        <input type="text" name="Last_name" id="Last_name" placeholder="Last Name" class="text lastname"> <span class="error" id="lname">Name must be required.</span><span class="error" id="rlname">Name must contain atleast 2 letters.</span>
+                    </div>
+                    <div>
+                        <label>Date of birth:</label>
+                        <input type="date" name="Date_of_birth" id="Date_of_birth" class="text dob" onchange="dobDate()"><span class="error" id="Dob">Dob must be required.</span><span class="error" id="rDob">Dob must below on 01-01-2010.</span>
+                    </div>
+                    <div>
+                        <label>Father Name: </label>
+                        <input type="text" name="Father_name" id="Father_name" placeholder="Father Name" class="fathername text"><span class="error" id="fname">Name must be required.</span><span class="error" id="rfname">Name must contain atleast 2 letters.</span>
+                    </div>
+                    <div>
+                        <label>Mother Name: </label>
+                        <input type="text" name="Mother_name" id="Mother_name" placeholder="Mother Name" class="text mothername"><span class="error" id="mname">Name must be required.</span><span class="error" id="rmname">Name must contain atleast 2 letters.</span>
+                    </div>
+                    <div>
+                        <label>Contact No:</label>
+                        <input type="number" name="contact" id="contact" placeholder="contact Number" class="text contact"><span class="error" id="mob">Contact must be required.</span><span class="error" id="rmob">Mobile no must contain 10 digits</span>
+                    </div>
+                    <div>
+                        <label>Email id:</label>
+                        <input type="email" name="email" id="email" placeholder="Email id"  class="text email"><span class="error" id="mail">Email must be required.</span><span class="error" id="rmail">Enter a valid mail.</span>
+                    </div>
+                    <div>
+                        <label>State:</label>
+                        <select class="state" id="state">
+                            <option>Select State</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="Thamilnadu">Thamilnadu</option>
+                        </select><span class="error" id="stateerror">Select state.</span>
+                    </div>
+                    <div>
+                        <label>District:</label>
+                        <select class="district" id="district">
+                            <option>Select District</option>
+                            <option value="ekm">Eranakulam</option>
+                            <option value="tvm">Thiruvanathapuram</option>
+                        </select><span class="error" id="districterror">Select district.</span>
+                    </div>
+                    <div>
+                        <label>Address:</label>
+                        <input type="text" name="address" id="address" placeholder="Address" class="text address"><span class="error" id="addresserror">Address must be required.</span><span class="error" id="raddresserror">Address must contain atleast 5 letters.</span>
+                    </div>
+                    <div>
+                        <label>Pincode:</label>
+                        <input type="number" name="pin" id="pin" placeholder="Pincode" class="text pin" ><span class="error" id="pinerror">Pin must be required.</span><span class="error" id="rpinerror">Pin must contain 6 digits.</span>
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="radio" name="gender" class="gender" id="male" value="Male" class="radio">Male
+                        <input type="radio" name="gender" class="gender" id="female" value="Female"> Female<span class="error" id="gendererror">Choose gender.</span>
+                    </div>
+                    <div>
+                            <label>Hobbies:</label>
+                            <input type="checkbox" name="Hobbies" class="Hobbies" id="arts" class="check">Arts
+                            <input type="checkbox" name="Hobbies" class="Hobbies" id="sports">Sports<span class="error" id="Hobbieerror">Choose your hobbie.</span>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="button" name="save" id="save" value="Save" class="btn s">
+                            <input type="button" name="cancel" id="cancel" value="Cancel" class="btn c">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        <div>
+
+        </div>
+        <div class="footer">
+            <p>copyright@SJ School.</p>
+        </div>
+    </body>
+</html>
